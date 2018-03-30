@@ -1,21 +1,25 @@
 var PingPong = function(number) {
     for (var index = 1; index <= number; index += 1) {
         var newList = [];
-        if (number % 3 === 0 && number % 5 === 0) {
+        if (index % 3 === 0 && index % 5 === 0) {
             newList.push("PingPong");
-        } else if (number % 3 === 0); {
+        } else if (index % 3 === 0) {
+            newList.push("Ping");
+        } else if (index % 5 === 0) {
             newList.push("Pong");
-        } else if (number % 5 === 0); {
-            newList("Ping");
         } else {
             newList.push(index);
         }
     }
-}
+    return newList;
+
+};
+
+function countPing(numList) {};
 $(document).ready(function() {
     $("form.form_number").submit(function(event) {
         event.preventDefault();
-        var number = parsenInt($("input#digit").val());
+        var number = parseInt($("input#digit").val());
         var pingList = PingPong(number);
 
 
