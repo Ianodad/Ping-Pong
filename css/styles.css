@@ -23,3 +23,7 @@ p {}
 .form-control {
     width: 200px;
 }
+
+.result {
+    display: none;
+}
