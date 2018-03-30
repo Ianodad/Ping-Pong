@@ -1,0 +1,25 @@
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {}
+
+.header {
+    background-color: yellow;
+}
+
+.content {
+    background-color: grey;
+}
+
+.about {
+    background-color: green;
+}
+
+.main {}
+
+.form-control {
+    width: 200px;
+}
