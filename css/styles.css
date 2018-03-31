@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
+    color: #474143;
 }
 
 h1 {
@@ -18,10 +19,12 @@ h3 {}
 
 p {}
 
-/*stying of the header section*/
+/****************************
+  STYLING OF HEADER SECTION
+****************************/
 
 .header {
-    background-color: yellow;
+    background-color: rgb(255, 198, 54);
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:900);
@@ -88,9 +91,56 @@ div.foo {
 
 /*End of the header section*/
 
+/***********************
+  STYLING OF CONTENT
+************************/
+
 .content {
     background-color: grey;
 }
+
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #00ADA9;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+/*End of content*/
 
 .about {
     background-color: green;
@@ -98,10 +148,18 @@ div.foo {
 
 .main {}
 
+ol {
+    float: left;
+}
+
 .form-control {
     width: 200px;
 }
 
-.result {
+.result-tab {
     display: none;
+}
+
+#result-h {
+    display: contents;
 }
