@@ -53,6 +53,9 @@ div.foo {
     transform-style: preserve-3d;
     perspective: 400;
     z-index: 1;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
 }
 
 .letter:before, .letter:after {
@@ -114,13 +117,28 @@ div.foo {
 
 .about {
     background-color: #00ADA9;
-    height: 420px;
+    height: 440px;
     opacity: 0.9;
     margin: 10px 10px 10px 30px;
+    font: 15px;
+    border: 2px solid #FF6444;
 }
 
 .about h2 {
     font-size: 25px;
+    color: #FFC636;
+    animation-duration: 5s;
+    animation-delay: 02s;
+    animation-iteration-count: 1;
+}
+
+.info {
+    margin: 20px 10px 0px 0px;
+    padding: 15px 10px 0px 0px;
+}
+
+.info p {
+    font-size: 20px;
 }
 
 /***********************
@@ -132,26 +150,56 @@ div.foo {
 ************************/
 
 .main {
-    height: 420px;
+    height: 440px;
     margin: 10px 10px;
     opacity: 0.9;
+    border: 2px solid rgb(255, 198, 54);
 }
 
 .main h2 {
     font-family: 'Monoton', cursive;
     text-align: center;
     text-decoration: underline;
+    color: red;
+}
+
+.main h3 {
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 7;
+}
+
 }
 
 .section-1 {
-    margin: 20px 20px;
-    padding: 30px 20px;
+    margin: 10px 20px;
+    padding: 10px 20px;
     width: 100%;
     height: 100%;
 }
 
 .rules {
-    padding: 0px 50px;
+    padding: 0px 45px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.ping {
+    color: #00ADA9;
+    font-size: 20px;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.pong {
+    color: rgb(255, 198, 54);
+    font-size: 20px;
+}
+
+.ping-pong {
+    color: #FF6444;
+    font-size: 20px;
 }
 
 .form_f {
@@ -162,8 +210,14 @@ div.foo {
     width: 200px;
 }
 
-.content {
+/*.content {
     background-color: grey;
+}*/
+
+label {
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 15;
 }
 
 .btn-primary.raised {
@@ -213,13 +267,20 @@ div.foo {
 
 .result {
     background-color: #FF6444;
-    height: 420px;
+    height: 440px;
     margin: 10px 10px 10px 10px;
     opacity: 0.9;
+    border: 2px solid #00ADA9;
 }
 
 .result h2 {
-    font-size: 25px;
+    font-size: 23px;
+    color: rgb(255, 198, 54);
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
 }
 
 .result:hover {
@@ -231,10 +292,16 @@ div.foo {
 .result-tab {
     display: none;
     color: white;
+    padding: 0px 0px;
+    margin: 50px 70px;
 }
 
 .result ul {
     list-style-type: none;
+    font-size: 20px;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
 }
 
 #result-h {

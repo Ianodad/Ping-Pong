@@ -15,54 +15,66 @@
     <body>
         <div class="container-fluid row">
             <div class="header col-md-12">
-                <div class="foo">
-                    <span class="letter" data-letter="P">P</span>
-                    <span class="letter" data-letter="I">I</span>
-                    <span class="letter" data-letter="N">N</span>
-                    <span class="letter" data-letter="G">G</span>
-                    <span class="letter" data-letter="P">P</span>
-                    <span class="letter" data-letter="O">O</span>
-                    <span class="letter" data-letter="N">N</span>
-                    <span class="letter" data-letter="G">G</span>
+                <div class="foo animated zoomIn">
+                    <span class="letter animated bounce" data-letter="P">P</span>
+                    <span class="letter fall1" data-letter="I">I</span>
+                    <span class="letter animated jello" data-letter="N">N</span>
+                    <span class="letter animated flash" data-letter="G">G</span>
+                    <span class="letter fall2" data-letter="P">P</span>
+                    <span class="letter animated jello" data-letter="O">O</span>
+                    <span class="letter animated flash" data-letter="N">N</span>
+                    <span class="letter fall3" data-letter="G">G</span>
                 </div>
             </div>
             <div class="content col-md-12">
                 <div class="row section-1">
                     <div class="about col-md-3 well">
-                        <h2>About Ping Pong</h2>
-
-                        <h3>Created by:</h3>
-                        <p>Ian Odhaimbo</p>
-                        <h3>GitHub Username/URL</h3>
-                        <p></p>
-                        <h3>Level 2 Test for:</h3>
-                        <p>Javascript</p>
-
+                        <h2 class="animated bounceInDown">About Ping Pong</h2>
+                        <div class="info animated slideInLeft ">
+                            <h3>Created by:</h3>
+                            <p id="name">Ian Odhaimbo</p>
+                            </p>
+                            <h3>GitHub Username/URL</h3>
+                            <p id="link"><a href="https://github.com/Ianodad/Ping-Pong">Click Here For Git Hub URL</a></p>
+                            <h3>Level 2 Test for:</h3>
+                            <p>JavaScript</p>
+                        </div>
                     </div>
                     <div class="main col-md-5 well">
                         <div class="row section-2">
                             <div class="col-md-12">
-                                <h2>Let's play</h2>
+                                <h2 class="heading animated flip">Let's play</h2>
                             </div>
                             <div class="col-md-12">
-                                <div class="rules">
+                                <div class="rules animated rollIn ">
 
-                                    <h3>Rules:</h3>
+                                    <h3 class="animated bounce">Rules:</h3>
                                     <p>Ping Pong will count up to your number from 1 with the following
                                         exceptions:
                                     </p>
 
                                     <ol>
-                                        <li>Numbers divisible by 3 become "ping"</li>
-                                        <li>Numbers divisible by 5 become"pong"</li>
-                                        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+                                        <li>Numbers divisible by
+                                            <span class="ping">3</span> become
+                                            <span class="ping">Ping</span>
+                                        </li>
+                                        <li>Numbers divisible by
+                                            <span class="pong">5</span> become
+                                            <span class="pong">Pong</span>
+                                        </li>
+                                        <li>Numbers divisible by
+                                            <span class="ping">3</span> and
+                                            <span class="pong"> 5</span> become
+                                            <span class="ping">Ping</span>
+                                            <span class="pong">Pong</span>
+                                        </li>
                                     </ol>
                                 </div>
                             </div>
-                            <div class="col-md-12 form_f">
+                            <div class="col-md-12 form_f animated slideInUp">
                                 <form action="" class="form_number">
                                     <div class="form-group">
-                                        <label for="Start">Enter your number here:</label>
+                                        <label class="animated wobble" for="Start">Enter your number here:</label>
                                         <input type="" class="form-control" id="digit" placeholder="Enter Number">
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-lg raised">Ping Pong</button>
@@ -72,12 +84,13 @@
                     </div>
 
                     <div class="result col-md-3 well">
-                        <h2>HERE IS YOUR RESULT</h2>
+                        <h2 class="animated bounceInDown">HERE IS YOUR RESULT</h2>
 
                         <div class="result-tab">
-                            <ul>
+                            <ul class="animated pulse">
 
                             </ul>
+                            <a class="btn btn-danger" type="button" href="">Refresh</a>
                         </div>
                     </div>
 
