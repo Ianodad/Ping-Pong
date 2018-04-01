@@ -15,6 +15,7 @@ var PingPong = function(number) {
 
 };
 
+function countPing(numList) {}
 $(document).ready(function() {
     $("form.form_number").submit(function(event) {
         event.preventDefault();
@@ -27,6 +28,6 @@ $(document).ready(function() {
             $("ul").append(printNumber);
 
         });
-        $(".result").show();
+        $(".result-tab").show();
     });
 });
