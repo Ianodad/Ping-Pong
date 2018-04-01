@@ -89,11 +89,63 @@ div.foo {
     transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
 }
 
-/*End of the header section*/
+/****************************
+  END STYLING HEADER
+****************************/
 
 /***********************
   STYLING OF CONTENT
 ************************/
+
+.content {
+    background-image: url(../images/numbers.jpg);
+}
+
+/***********************
+  ABOUT SECTION START
+************************/
+
+.about {
+    background-color: #00ADA9;
+    height: 420px;
+    opacity: 0.9;
+    margin: 10px 10px 10px 30px;
+}
+
+.about h2 {
+    font-size: 25px;
+}
+
+/***********************
+ END OF ABOUT STYLING
+************************/
+
+/***********************
+  MAIN STYLING
+************************/
+
+.main {
+    height: 420px;
+    margin: 10px 10px;
+}
+
+.main h2 {
+    font-family: 'Monoton', cursive;
+    text-align: center;
+}
+
+.section-1 {
+    margin: 20px 20px;
+    padding: 30px 20px;
+}
+
+ol {
+    float: left;
+}
+
+.form-control {
+    width: 200px;
+}
 
 .content {
     background-color: grey;
@@ -110,10 +162,6 @@ div.foo {
     margin-top: 3px;
 }
 
-/***********************
-  CUSTON BTN VALUES
-************************/
-
 .btn {
     padding: 14px 24px;
     border: 0 none;
@@ -127,12 +175,12 @@ div.foo {
 }
 
 .btn-primary {
-    background: #0099cc;
+    background: #00ADA9;
     color: #ffffff;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    background: #33a6cc;
+    background: #009490;
 }
 
 .btn-primary:active, .btn-primary.active {
@@ -140,20 +188,18 @@ div.foo {
     box-shadow: none;
 }
 
-/*End of content*/
+/***********************
+  END OF MAIN STYLING
+************************/
 
-.about {
-    background-color: green;
-}
+/***********************
+  RESULT STYLING
+************************/
 
-.main {}
-
-ol {
-    float: left;
-}
-
-.form-control {
-    width: 200px;
+.result {
+    background-color: #FF6444;
+    height: 420px;
+    margin: 10px 10px 10px 10px;
 }
 
 .result-tab {
@@ -163,3 +209,7 @@ ol {
 #result-h {
     display: contents;
 }
+
+/***********************
+  END OF RESULT STYLING
+************************/
