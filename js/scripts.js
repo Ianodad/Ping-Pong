@@ -2,8 +2,8 @@
 //BUSINESS LOGIC STARTS HERE!!//
 //////////////////////////////
 var PingPong = function(number) {
+    var newList = [];
     for (var index = 1; index <= number; index += 1) {
-        var newList = [];
         if (index % 3 === 0 && index % 5 === 0) {
             newList.push("Ping Pong");
         } else if (index % 3 === 0) {
@@ -53,6 +53,7 @@ function countPing(numList) {}
 $(document).ready(function() {
     $("form.form_number").submit(function(event) {
         event.preventDefault();
+        $("ul").empty();
         var number = parseInt($("input#digit").val());
         var pingList = PingPong(number);
 
